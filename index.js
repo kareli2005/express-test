@@ -2,7 +2,7 @@ const express = require("express")
 const dotenv = require("dotenv")
 const cors = require("cors")
 // const testRoutes = require("./routes/testRoutes")
-const testword = require('./test')
+const testword = require('./test/test')
 
 const PORT = 5000
 
