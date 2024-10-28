@@ -1,6 +1,16 @@
 const express = require("express")
+const dotenv = require("dotenv")
+const cors = require("cors")
+const testRoutes = require("./routes/testRoutes")
+
+const PORT = 5000
+
+dotenv.config()
+
 const app = express()
-const PORT = 4000
+
+app.use('/api/test', testRoutes)
+
 
 app.get("/home", (req, res) => {
   res.status(200).json("Welcome to app home")
