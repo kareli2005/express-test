@@ -1,13 +1,14 @@
 const express = require("express")
 const dotenv = require("dotenv")
 const cors = require("cors")
-const testRoutes = require("./routes/testRoutes")
+// const testRoutes = require("./routes/testRoutes")
 
 const PORT = 5000
 
 dotenv.config()
 
 const app = express()
+app.use(cors())
 
 // app.use('/api/test', testRoutes)
 
