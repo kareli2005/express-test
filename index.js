@@ -9,7 +9,7 @@ dotenv.config()
 
 const app = express()
 
-app.use('/api/test', testRoutes)
+// app.use('/api/test', testRoutes)
 
 
 app.get("/home", (req, res) => {
